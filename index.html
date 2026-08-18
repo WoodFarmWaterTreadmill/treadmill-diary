@@ -1,14 +1,16 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Wood Farm Hampshire — Treadmill Availability</title><style>body{margin:0;background:#f6f7f5;color:#243028;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}main{max-width:760px;margin:auto;padding:28px 16px 50px}header,section{background:#fff;border:1px solid #e1e6e1;border-radius:18px;padding:20px;margin-bottom:14px}.slot{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:center;border-top:1px solid #edf0ed;padding:12px 0}.time{font-weight:700;font-size:17px}.btn{background:#315c4c;color:#fff;text-decoration:none;padding:8px 12px;border-radius:9px;font-weight:600;font-size:14px}</style></head>
+<html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Wood Farm Hampshire — Treadmill Availability</title><style>body{margin:0;background:#f6f7f5;color:#243028;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}main{max-width:760px;margin:auto;padding:28px 16px 50px}header,section{background:#fff;border:1px solid #e1e6e1;border-radius:18px;padding:20px;margin-bottom:14px}.slot{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:center;border-top:1px solid #edf0ed;padding:12px 0}.time{font-weight:700;font-size:17px}.btn{background:#315c4c;color:#fff;text-decoration:none;padding:8px 12px;border-radius:9px;font-weight:600;font-size:14px}</style></head>
 <body><main><header><h1>Wood Farm Hampshire</h1><h2>Treadmill Availability</h2><p>Available appointments with Shelly. Choose a time and click Enquire Now to request your booking.</p></header><section><div id="slots">Loading availability...</div></section></main>
 <script>
 fetch('availability.json?v='+Date.now()).then(r=>r.json()).then(slots=>{
  const today=new Date().toISOString().slice(0,10);
  const future=slots.filter(s=>s.date>=today);
+ const formatDate=date=>{const [y,m,d]=date.split('-');return `${d}/${m}/${y}`;};
  document.getElementById('slots').innerHTML=future.length?future.map(s=>{
-  const subject=encodeURIComponent('Treadmill appointment enquiry - '+s.date+' '+s.time);
-  const body=encodeURIComponent('I would like to enquire about the treadmill appointment with Shelly on '+s.date+' at '+s.time+'.');
-  return `<div class="slot"><div><strong>${s.date}</strong><br><span class="time">${s.time}</span> with Shelly</div><a class="btn" href="mailto:treadmill@woodfarmhampshire.co.uk?subject=${subject}&body=${body}">Enquire Now</a></div>`;
+  const displayDate=formatDate(s.date);
+  const subject=encodeURIComponent('Treadmill appointment enquiry - '+displayDate+' '+s.time);
+  const body=encodeURIComponent('I would like to enquire about the treadmill appointment with Shelly on '+displayDate+' at '+s.time+'.');
+  return `<div class="slot"><div><strong>${displayDate}</strong><br><span class="time">${s.time}</span> with Shelly</div><a class="btn" href="mailto:treadmill@woodfarmhampshire.co.uk?subject=${subject}&body=${body}">Enquire Now</a></div>`;
  }).join(''):'No future availability currently listed.';
 }).catch(()=>document.getElementById('slots').textContent='Unable to load availability.');
 </script></body></html>
