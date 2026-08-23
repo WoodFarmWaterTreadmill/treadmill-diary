@@ -11,9 +11,9 @@ header{background:white;border-radius:18px;padding:22px;margin-bottom:16px;box-s
 h1{margin:0 0 5px;font-size:28px}#summary{color:#68717d;font-size:14px}
 .card{background:white;border-radius:16px;margin:10px 0;padding:16px;box-shadow:0 2px 12px #0000000b}
 .date{font-weight:700;font-size:18px;margin-bottom:10px}.row{display:grid;grid-template-columns:72px 1fr 1fr;gap:10px;align-items:center;padding:10px 0;border-top:1px solid #eceef1}
-.time{font-weight:700}.label{font-size:11px;color:#7a828c;text-transform:uppercase;letter-spacing:.05em}.value{font-size:15px}.free{font-weight:700}
+.time{font-weight:700}.label{font-size:11px;color:#7a828c;text-transform:uppercase;letter-spacing:.05em}.value{font-size:15px}
 .empty{background:white;border-radius:16px;padding:24px;text-align:center;color:#68717d}.error{color:#a33}
-@media(max-width:650px){.row{grid-template-columns:64px 1fr}.owner{grid-column:2}.free{grid-column:2}}
+@media(max-width:650px){.row{grid-template-columns:64px 1fr}.owner{grid-column:2}}
 </style>
 </head>
 <body>
@@ -23,17 +23,14 @@ h1{margin:0 0 5px;font-size:28px}#summary{color:#68717d;font-size:14px}
 </div>
 <script>
 const fmtDate=iso=>new Intl.DateTimeFormat('en-GB',{weekday:'short',day:'numeric',month:'short',year:'numeric'}).format(new Date(iso+'T12:00:00'));
-const now=new Date();
-Promise.all([fetch('appointments.json',{cache:'no-store'}).then(r=>r.json()),fetch('availability.json?v='+Date.now(),{cache:'no-store'}).then(r=>r.json())]).then(([data,free])=>{
+fetch('appointments.json',{cache:'no-store'}).then(r=>r.json()).then(data=>{
  const current=new Date();
- const booked=data.appointments.filter(a=>new Date(a.date+'T'+a.time+':00')>=current);
- const available=free.filter(a=>new Date(a.date+'T'+a.time+':00')>=current).map(a=>({...a,free:true}));
- const all=[...booked,...available].sort((a,b)=>(a.date+a.time).localeCompare(b.date+b.time));
- const groups={}; all.forEach(a=>(groups[a.date]??=[]).push(a));
- document.getElementById('summary').textContent=booked.length+' appointments coming up';
+ const upcoming=data.appointments.filter(a=>new Date(a.date+'T'+a.time+':00')>=current);
+ const groups={}; upcoming.forEach(a=>(groups[a.date]??=[]).push(a));
+ document.getElementById('summary').textContent=upcoming.length+(upcoming.length===1?' appointment':' appointments')+' coming up';
  const main=document.getElementById('appointments');
- if(!all.length){main.innerHTML='<div class="empty">No upcoming appointments.</div>';return;}
- main.innerHTML=Object.entries(groups).map(([date,items])=>`<section class="card"><div class="date">${fmtDate(date)}</div>${items.map(a=>a.free?`<div class="row"><div class="time">${a.time}</div><div class="free">FREE</div></div>`:`<div class="row"><div class="time">${a.time}</div><div><div class="label">Horse</div><div class="value">${a.horse}</div></div><div class="owner"><div class="label">Owner</div><div class="value">${a.owner}</div></div></div>`).join('')}</section>`).join('');
+ if(!upcoming.length){main.innerHTML='<div class="empty">No upcoming appointments.</div>';return;}
+ main.innerHTML=Object.entries(groups).map(([date,items])=>`<section class="card"><div class="date">${fmtDate(date)}</div>${items.map(a=>`<div class="row"><div class="time">${a.time}</div><div><div class="label">Horse</div><div class="value">${a.horse}</div></div><div class="owner"><div class="label">Owner</div><div class="value">${a.owner}</div></div></div>`).join('')}</section>`).join('');
 }).catch(()=>{document.getElementById('summary').textContent='';document.getElementById('appointments').innerHTML='<div class="empty error">Unable to load appointments.</div>';});
 </script>
 </body>
