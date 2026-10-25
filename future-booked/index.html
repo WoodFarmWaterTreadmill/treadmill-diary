@@ -1,0 +1,643 @@
+<!doctype html>
+<html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Future Booked Appointments</title>
+<style>
+body{margin:0;background:#f6f7f5;color:#243028;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+main{max-width:1000px;margin:auto;padding:28px 16px 50px}
+header,section{background:#fff;border:1px solid #e1e6e1;border-radius:18px;padding:20px;margin-bottom:14px}
+h1{margin:0;font-size:28px}.summary{color:#788078;margin-top:8px;font-size:14px}
+.day{font-weight:700;font-size:20px;margin-bottom:12px}
+.row{display:grid;grid-template-columns:70px 1fr 1fr 1fr 1.2fr;gap:12px;border-top:1px solid #edf0ed;padding:12px 0;align-items:start}
+.time{font-weight:700}.label{font-size:11px;color:#788078;text-transform:uppercase;letter-spacing:.05em}.value{font-size:16px;overflow-wrap:anywhere}
+.empty{background:#fff;border:1px solid #e1e6e1;border-radius:18px;padding:24px;color:#788078;text-align:center}
+@media(max-width:700px){main{padding:16px 10px 32px}header,section{padding:15px}h1{font-size:24px}.row{grid-template-columns:58px 1fr 1fr;gap:8px}.row>div:nth-child(4),.row>div:nth-child(5){grid-column:2 / 4}.value{font-size:15px}}
+</style></head><body><main><header><h1>Future Booked Appointments</h1><div id="summary" class="summary">Loading appointments…</div></header><div id="appointments"></div></main>
+<script>
+const data={
+  "updated": "2026-10-25",
+  "appointments": [
+    {
+      "date": "2026-10-26",
+      "time": "08:30",
+      "operator": "Michael",
+      "horse": "Quin",
+      "owner": "Sarah Osborne",
+      "product": "Treadmill"
+    },
+    {
+      "date": "2026-10-26",
+      "time": "10:30",
+      "operator": "Shelly",
+      "horse": "Vinnie",
+      "owner": "Grace Millar",
+      "product": "Treadmill"
+    },
+    {
+      "date": "2026-10-26",
+      "time": "11:00",
+      "operator": "Shelly",
+      "horse": "Gordon",
+      "owner": "Grace Millar",
+      "product": "Treadmill"
+    },
+    {
+      "date": "2026-10-26",
+      "time": "11:30",
+      "operator": "Shelly",
+      "horse": "Freddie",
+      "owner": "Maria Lavery",
+      "product": "Treadmill"
+    },
+    {
+      "date": "2026-10-27",
+      "time": "07:00",
+      "operator": "Michael",
+      "horse": "Rasputin",
+      "owner": "Liz Royou Compton",
+      "product": "Treadmill"
+    },
+    {
+      "date": "2026-10-27",
+      "time": "16:00",
+      "operator": "Michael",
+      "horse": "Pat",
+      "owner": "Gemma Bruce",
+      "product": "Treadmill"
+    },
+    {
+      "date": "2026-10-27",
+      "time": "16:30",
+      "operator": "Michael",
+      "horse": "Harry",
+      "owner": "Gemma Bruce",
+      "product": "Treadmill"
+    },
+    {
+      "date": "2026-10-28",
+      "time": "09:00",
+      "operator": "Michael",
+      "horse": "Sox",
+      "owner": "Caroline Russ",
+      "product": "Treadmill"
+    },
+    {
+      "date": "2026-10-28",
+      "time": "10:00",
+      "operator": "Shelly",
+      "horse": "Misty",
+      "owner": "Tania Nash",
+      "product": "Treadmill"
+    },
+    {
+      "date": "2026-10-28",
+      "time": "12:00",
+      "operator": "Shelly",
+      "horse": "Trump",
+      "owner": "Cheryl Noble",
+      "product": "Treadmill"
+    },
+    {
+      "date": "2026-10-28",
+      "time": "13:00",
+      "operator": "Shelly",
+      "horse": "Tony",
+      "owner": "Lisa Noble",
+      "product": "Treadmill"
+    },
+    {
+      "date": "2026-10-29",
+      "time": "09:30",
+      "operator": "Shelly",
+      "horse": "Caspar",
+      "owner": "Kelly Ratcliff",
+      "product": "Treadmill"
+    },
+    {
+      "date": "2026-10-29",
+      "time": "10:00",
+      "operator": "Shelly",
+      "horse": "Grace",
+      "owner": "Jamie Eaton",
+      "product": "Treadmill"
+    },
+    {
+      "date": "2026-10-29",
+      "time": "11:00",
+      "operator": "Shelly",
+      "horse": "Smartie",
+      "owner": "Izzy Robertson",
+      "product": "Treadmill"
+    },
+    {
+      "date": "2026-10-29",
+      "time": "11:30",
+      "operator": "Shelly",
+      "horse": "König",
+      "owner": "Liz Diegutis",
+      "product": "Treadmill"
+    },
+    {
+      "date": "2026-10-29",
+      "time": "12:00",
+      "operator": "Shelly",
+      "horse": "Freddie",
+      "owner": "Maria Lavery",
+      "product": "Treadmill"
+    },
+    {
+      "date": "2026-10-29",
+      "time": "12:30",
+      "operator": "Shelly",
+      "horse": "Freddie",
+      "owner": "Meg/Steve",
+      "product": "Treadmill"
+    },
+    {
+      "date": "2026-10-29",
+      "time": "13:00",
+      "operator": "Shelly",
+      "horse": "Gibralter",
+      "owner": "Steven Lawrence",
+      "product": "Treadmill"
+    },
+    {
+      "date": "2026-10-29",
+      "time": "13:30",
+      "operator": "Shelly",
+      "horse": "Luna",
+      "owner": "Victoria Zawoda",
+      "product": "Treadmill"
+    },
+    {
+      "date": "2026-10-29",
+      "time": "14:00",
+      "operator": "Shelly",
+      "horse": "Luna",
+      "owner": "Victoria Zawoda",
+      "product": "Sea Climate"
+    },
+    {
+      "date": "2026-10-29",
+      "time": "14:30",
+      "operator": "Shelly",
+      "horse": "Toby",
+      "owner": "Jo Young",
+      "product": "Treadmill"
+    },
+    {
+      "date": "2026-10-30",
+      "time": "15:00",
+      "operator": "Charlotte",
+      "horse": "Luna",
+      "owner": "Victoria Zawoda",
+      "product": "Sea Climate"
+    },
+    {
+      "date": "2026-10-31",
+      "time": "11:00",
+      "operator": "Michael",
+      "horse": "Sox",
+      "owner": "Caroline Russ",
+      "product": "Treadmill"
+    },
+    {
+      "date": "2026-10-31",
+      "time": "11:45",
+      "operator": "Michael",
+      "horse": "Luna",
+      "owner": "Victoria Zawoda",
+      "product": "Sea Climate"
+    },
+    {
+      "date": "2026-11-04",
+      "time": "09:00",
+      "operator": "Michael",
+      "horse": "Sox",
+      "owner": "Caroline Russ",
+      "product": "Treadmill"
+    },
+    {
+      "date": "2026-11-04",
+      "time": "10:00",
+      "operator": "Shelly",
+      "horse": "Misty",
+      "owner": "Tania Nash",
+      "product": "Treadmill"
+    },
+    {
+      "date": "2026-11-04",
+      "time": "10:30",
+      "operator": "Shelly",
+      "horse": "Edith",
+      "owner": "Katie Moore",
+      "product": "Treadmill"
+    },
+    {
+      "date": "2026-11-04",
+      "time": "11:00",
+      "operator": "Shelly",
+      "horse": "Gordon",
+      "owner": "Grace Millar",
+      "product": "Treadmill"
+    },
+    {
+      "date": "2026-11-04",
+      "time": "12:00",
+      "operator": "Shelly",
+      "horse": "Trump",
+      "owner": "Cheryl Noble",
+      "product": "Treadmill"
+    },
+    {
+      "date": "2026-11-04",
+      "time": "13:00",
+      "operator": "Shelly",
+      "horse": "Tony",
+      "owner": "Lisa Noble",
+      "product": "Treadmill"
+    },
+    {
+      "date": "2026-11-05",
+      "time": "09:30",
+      "operator": "Shelly",
+      "horse": "Caspar",
+      "owner": "Kelly Ratcliff",
+      "product": "Treadmill"
+    },
+    {
+      "date": "2026-11-05",
+      "time": "10:00",
+      "operator": "Shelly",
+      "horse": "Grace",
+      "owner": "Jamie Eaton",
+      "product": "Treadmill"
+    },
+    {
+      "date": "2026-11-05",
+      "time": "11:30",
+      "operator": "Shelly",
+      "horse": "König",
+      "owner": "Liz Diegutis",
+      "product": "Treadmill"
+    },
+    {
+      "date": "2026-11-05",
+      "time": "12:00",
+      "operator": "Shelly",
+      "horse": "Freddie",
+      "owner": "Maria Lavery",
+      "product": "Treadmill"
+    },
+    {
+      "date": "2026-11-05",
+      "time": "12:30",
+      "operator": "Shelly",
+      "horse": "Freddie",
+      "owner": "Meg/Steve",
+      "product": "Treadmill"
+    },
+    {
+      "date": "2026-11-05",
+      "time": "13:00",
+      "operator": "Shelly",
+      "horse": "Gibralter",
+      "owner": "Steven Lawrence",
+      "product": "Treadmill"
+    },
+    {
+      "date": "2026-11-05",
+      "time": "13:30",
+      "operator": "Shelly",
+      "horse": "May",
+      "owner": "Maddie Gray",
+      "product": "Treadmill"
+    },
+    {
+      "date": "2026-11-05",
+      "time": "14:30",
+      "operator": "Shelly",
+      "horse": "Toby",
+      "owner": "Jo Young",
+      "product": "Treadmilll"
+    },
+    {
+      "date": "2026-11-06",
+      "time": "08:00",
+      "operator": "Michael",
+      "horse": "Rasputin",
+      "owner": "Liz Royou Compton",
+      "product": "Treadmill"
+    },
+    {
+      "date": "2026-11-07",
+      "time": "11:00",
+      "operator": "Michael",
+      "horse": "Sox",
+      "owner": "Caroline Russ",
+      "product": "Treadmill"
+    },
+    {
+      "date": "2026-11-08",
+      "time": "11:30",
+      "operator": "Michael",
+      "horse": "JJ",
+      "owner": "Emma Stares",
+      "product": "Treadmill"
+    },
+    {
+      "date": "2026-11-10",
+      "time": "16:00",
+      "operator": "Michael",
+      "horse": "Pat",
+      "owner": "Gemma Bruce",
+      "product": "Treadmill"
+    },
+    {
+      "date": "2026-11-10",
+      "time": "16:30",
+      "operator": "Michael",
+      "horse": "Harry",
+      "owner": "Gemma Bruce",
+      "product": "Treadmill"
+    },
+    {
+      "date": "2026-11-11",
+      "time": "09:00",
+      "operator": "Michael",
+      "horse": "Sox",
+      "owner": "Caroline Russ",
+      "product": "Treradmill"
+    },
+    {
+      "date": "2026-11-11",
+      "time": "11:00",
+      "operator": "Shelly",
+      "horse": "Gordon",
+      "owner": "Grace Millar",
+      "product": "Treadmill"
+    },
+    {
+      "date": "2026-11-11",
+      "time": "12:00",
+      "operator": "Shelly",
+      "horse": "Trump",
+      "owner": "Cheryl Noble",
+      "product": "Treadmill"
+    },
+    {
+      "date": "2026-11-12",
+      "time": "09:30",
+      "operator": "Shelly",
+      "horse": "Caspar",
+      "owner": "Kelly Ratcliff",
+      "product": "Treadmill"
+    },
+    {
+      "date": "2026-11-12",
+      "time": "10:00",
+      "operator": "Shelly",
+      "horse": "Grace",
+      "owner": "Jamie Eaton",
+      "product": "Treadmill"
+    },
+    {
+      "date": "2026-11-12",
+      "time": "11:30",
+      "operator": "Shelly",
+      "horse": "Smartie",
+      "owner": "Izzy Robertson",
+      "product": "Treadmill"
+    },
+    {
+      "date": "2026-11-12",
+      "time": "12:00",
+      "operator": "Shelly",
+      "horse": "Freddie",
+      "owner": "Maria Lavery",
+      "product": "Treadmill"
+    },
+    {
+      "date": "2026-11-12",
+      "time": "12:30",
+      "operator": "Shelly",
+      "horse": "Freddie",
+      "owner": "Meg/Steve",
+      "product": "Treadmill"
+    },
+    {
+      "date": "2026-11-12",
+      "time": "13:00",
+      "operator": "Shelly",
+      "horse": "Gibralter",
+      "owner": "Steven Lawrence",
+      "product": "Treadmill"
+    },
+    {
+      "date": "2026-11-12",
+      "time": "14:00",
+      "operator": "Shelly",
+      "horse": "Edith",
+      "owner": "Katie Moore",
+      "product": "Treadmill"
+    },
+    {
+      "date": "2026-11-17",
+      "time": "16:00",
+      "operator": "Michael",
+      "horse": "Pat",
+      "owner": "Gemma Bruce",
+      "product": "Treadmill"
+    },
+    {
+      "date": "2026-11-17",
+      "time": "16:30",
+      "operator": "Michael",
+      "horse": "Harry",
+      "owner": "Gemma Bruce",
+      "product": "Treadmill"
+    },
+    {
+      "date": "2026-11-18",
+      "time": "08:00",
+      "operator": "Michael",
+      "horse": "Rasputin",
+      "owner": "Liz Royou Compton",
+      "product": "Treadmill"
+    },
+    {
+      "date": "2026-11-18",
+      "time": "11:00",
+      "operator": "Shelly",
+      "horse": "Gordon",
+      "owner": "Grace Millar",
+      "product": "Treadmill"
+    },
+    {
+      "date": "2026-11-18",
+      "time": "12:00",
+      "operator": "Shelly",
+      "horse": "Trump",
+      "owner": "Cheryl Noble",
+      "product": "Treadmill"
+    },
+    {
+      "date": "2026-11-19",
+      "time": "10:00",
+      "operator": "Shelly",
+      "horse": "Grace",
+      "owner": "Jamie Eaton",
+      "product": "Treadmill"
+    },
+    {
+      "date": "2026-11-19",
+      "time": "12:00",
+      "operator": "Shelly",
+      "horse": "Freddie",
+      "owner": "Maria Lavery",
+      "product": "Treadmill"
+    },
+    {
+      "date": "2026-11-19",
+      "time": "12:30",
+      "operator": "Shelly",
+      "horse": "Freddie",
+      "owner": "Meg/Steve",
+      "product": "Treadmill"
+    },
+    {
+      "date": "2026-11-19",
+      "time": "13:00",
+      "operator": "Shelly",
+      "horse": "Gibralter",
+      "owner": "Steven Lawrence",
+      "product": "Treadmill"
+    },
+    {
+      "date": "2026-11-19",
+      "time": "13:30",
+      "operator": "Shelly",
+      "horse": "May",
+      "owner": "Maddie Gray",
+      "product": "Treadmill"
+    },
+    {
+      "date": "2026-11-19",
+      "time": "14:00",
+      "operator": "Shelly",
+      "horse": "Edith",
+      "owner": "Katie Moore",
+      "product": "Treadmill"
+    },
+    {
+      "date": "2026-11-25",
+      "time": "11:00",
+      "operator": "Shelly",
+      "horse": "Gordon",
+      "owner": "Grace Millar",
+      "product": "Treadmill"
+    },
+    {
+      "date": "2026-11-26",
+      "time": "10:00",
+      "operator": "Shelly",
+      "horse": "Grace",
+      "owner": "Jamie Eaton",
+      "product": "Treadmill"
+    },
+    {
+      "date": "2026-11-26",
+      "time": "11:30",
+      "operator": "Shelly",
+      "horse": "Smartie",
+      "owner": "Izzy Robertson",
+      "product": "Treadmill"
+    },
+    {
+      "date": "2026-11-26",
+      "time": "12:30",
+      "operator": "Shelly",
+      "horse": "Freddie",
+      "owner": "Meg/Steve",
+      "product": "Treadmill"
+    },
+    {
+      "date": "2026-11-26",
+      "time": "13:00",
+      "operator": "Shelly",
+      "horse": "Gibralter",
+      "owner": "Steven Lawrence",
+      "product": "Treadmill"
+    },
+    {
+      "date": "2026-11-26",
+      "time": "14:00",
+      "operator": "Shelly",
+      "horse": "Edith",
+      "owner": "Katie Moore",
+      "product": "Treadmill"
+    },
+    {
+      "date": "2026-12-01",
+      "time": "16:00",
+      "operator": "Michael",
+      "horse": "Pat",
+      "owner": "Gemma Bruce",
+      "product": "Treadmill"
+    },
+    {
+      "date": "2026-12-01",
+      "time": "16:30",
+      "operator": "Michael",
+      "horse": "Harry",
+      "owner": "Gemma Bruce",
+      "product": "Treadmill"
+    },
+    {
+      "date": "2026-12-02",
+      "time": "11:00",
+      "operator": "Shelly",
+      "horse": "Gordon",
+      "owner": "Grace Millar",
+      "product": "Treadmill"
+    },
+    {
+      "date": "2026-12-03",
+      "time": "10:00",
+      "operator": "Shelly",
+      "horse": "Grace",
+      "owner": "Jamie Eaton",
+      "product": "Treadmill"
+    },
+    {
+      "date": "2026-12-09",
+      "time": "11:00",
+      "operator": "Shelly",
+      "horse": "Gordon",
+      "owner": "Grace Millar",
+      "product": "Treadmill"
+    },
+    {
+      "date": "2026-12-10",
+      "time": "10:00",
+      "operator": "Shelly",
+      "horse": "Grace",
+      "owner": "Jamie Eaton",
+      "product": "Treadmill"
+    },
+    {
+      "date": "2026-12-10",
+      "time": "11:30",
+      "operator": "Shelly",
+      "horse": "Smartie",
+      "owner": "Izzy Robertson",
+      "product": "Treadmill"
+    }
+  ]
+};
+const root=document.getElementById('appointments');
+const upcoming=data.appointments.filter(a=>a.horse&&a.horse.trim()&&a.owner&&a.owner.trim()&&a.date>=new Date().toLocaleDateString('en-CA',{timeZone:'Europe/London'}));
+document.getElementById('summary').textContent=upcoming.length+' booked appointments';
+const groups={};upcoming.forEach(a=>(groups[a.date]??=[]).push(a));
+if(!upcoming.length){root.innerHTML='<div class="empty">No future booked appointments.</div>'}
+Object.keys(groups).sort().forEach(date=>{const d=new Date(date+'T12:00:00');const section=document.createElement('section');const day=document.createElement('div');day.className='day';day.textContent=d.toLocaleDateString('en-GB',{weekday:'long',day:'numeric',month:'long',year:'numeric'});section.appendChild(day);groups[date].sort((a,b)=>a.time.localeCompare(b.time)).forEach(a=>{const row=document.createElement('div');row.className='row';const cells=[['Time',a.time,true],['Operator',a.operator],['Horse',a.horse],['Owner',a.owner],['Product',a.product||'—']];row.innerHTML=cells.map(([label,value,bold])=>'<div>'+(bold?'<div class="time">'+value+'</div>':'<div class="label">'+label+'</div><div class="value">'+(value||'—')+'</div>')+'</div>').join('');section.appendChild(row)});root.appendChild(section)});
+</script></body></html>
