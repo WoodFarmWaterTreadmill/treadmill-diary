@@ -79,7 +79,7 @@
       "operator": "Shelly",
       "horse": "Jack",
       "owner": "Maisie",
-      "product": ""
+      "product": "Treadmill"
     },
     {
       "date": "2026-10-28",
@@ -87,6 +87,14 @@
       "operator": "Shelly",
       "horse": "Rocket",
       "owner": "Katie Silk",
+      "product": "Treadmill"
+    },
+    {
+      "date": "2026-10-28",
+      "time": "12:30",
+      "operator": "Shelly",
+      "horse": "Amira",
+      "owner": "Zoe Kerboul",
       "product": "Treadmill"
     },
     {
@@ -219,14 +227,6 @@
     },
     {
       "date": "2026-11-04",
-      "time": "10:30",
-      "operator": "Shelly",
-      "horse": "Edith",
-      "owner": "Katie Moore",
-      "product": "Treadmill"
-    },
-    {
-      "date": "2026-11-04",
       "time": "11:00",
       "operator": "Shelly",
       "horse": "Gordon",
@@ -271,7 +271,7 @@
       "operator": "Shelly",
       "horse": "Jack",
       "owner": "Maisie",
-      "product": ""
+      "product": "Treadmilll"
     },
     {
       "date": "2026-11-05",
@@ -375,7 +375,7 @@
       "operator": "Shelly",
       "horse": "Jack",
       "owner": "Maisie",
-      "product": ""
+      "product": "Treadmilll"
     },
     {
       "date": "2026-11-11",
@@ -443,14 +443,6 @@
     },
     {
       "date": "2026-11-12",
-      "time": "14:00",
-      "operator": "Shelly",
-      "horse": "Edith",
-      "owner": "Katie Moore",
-      "product": "Treadmill"
-    },
-    {
-      "date": "2026-11-12",
       "time": "14:30",
       "operator": "Shelly",
       "horse": "Franke",
@@ -503,7 +495,7 @@
       "operator": "Shelly",
       "horse": "Jack",
       "owner": "Maisie",
-      "product": ""
+      "product": "Treadmilll"
     },
     {
       "date": "2026-11-19",
@@ -546,14 +538,6 @@
       "product": "Treadmill"
     },
     {
-      "date": "2026-11-19",
-      "time": "14:00",
-      "operator": "Shelly",
-      "horse": "Edith",
-      "owner": "Katie Moore",
-      "product": "Treadmill"
-    },
-    {
       "date": "2026-11-25",
       "time": "11:00",
       "operator": "Shelly",
@@ -567,7 +551,7 @@
       "operator": "Shelly",
       "horse": "Jack",
       "owner": "Maisie",
-      "product": ""
+      "product": "Treadmilll"
     },
     {
       "date": "2026-11-26",
@@ -610,14 +594,6 @@
       "product": "Treadmill"
     },
     {
-      "date": "2026-11-26",
-      "time": "14:00",
-      "operator": "Shelly",
-      "horse": "Edith",
-      "owner": "Katie Moore",
-      "product": "Treadmill"
-    },
-    {
       "date": "2026-12-01",
       "time": "16:00",
       "operator": "Michael",
@@ -647,7 +623,7 @@
       "operator": "Shelly",
       "horse": "Jack",
       "owner": "Maisie",
-      "product": ""
+      "product": "Treadmilll"
     },
     {
       "date": "2026-12-03",
@@ -671,7 +647,7 @@
       "operator": "Shelly",
       "horse": "Jack",
       "owner": "Maisie",
-      "product": ""
+      "product": "Treadmilll"
     },
     {
       "date": "2026-12-10",
@@ -695,7 +671,7 @@
       "operator": "Shelly",
       "horse": "Jack",
       "owner": "Maisie",
-      "product": ""
+      "product": "Treadmilll"
     },
     {
       "date": "2026-12-24",
@@ -703,7 +679,7 @@
       "operator": "Shelly",
       "horse": "Jack",
       "owner": "Maisie",
-      "product": ""
+      "product": "Treadmilll"
     }
   ]
 }
