@@ -83,6 +83,14 @@
     },
     {
       "date": "2026-10-28",
+      "time": "11:00",
+      "operator": "Shelly",
+      "horse": "Rocket",
+      "owner": "Katie Silk",
+      "product": "Treadmill"
+    },
+    {
+      "date": "2026-10-28",
       "time": "13:00",
       "operator": "Shelly",
       "horse": "Tony",
@@ -127,14 +135,6 @@
       "operator": "Shelly",
       "horse": "König",
       "owner": "Liz Diegutis",
-      "product": "Treadmill"
-    },
-    {
-      "date": "2026-10-29",
-      "time": "12:00",
-      "operator": "Shelly",
-      "horse": "Freddie",
-      "owner": "Maria Lavery",
       "product": "Treadmill"
     },
     {
@@ -319,7 +319,7 @@
       "operator": "Shelly",
       "horse": "Toby",
       "owner": "Jo Young",
-      "product": "Treadmilll"
+      "product": "Treadmill"
     },
     {
       "date": "2026-11-06",
@@ -450,6 +450,14 @@
       "product": "Treadmill"
     },
     {
+      "date": "2026-11-12",
+      "time": "14:30",
+      "operator": "Shelly",
+      "horse": "Franke",
+      "owner": "Mandy Tommy",
+      "product": "Treadmill"
+    },
+    {
       "date": "2026-11-17",
       "time": "16:00",
       "operator": "Michael",
@@ -575,6 +583,14 @@
       "operator": "Shelly",
       "horse": "Smartie",
       "owner": "Izzy Robertson",
+      "product": "Treadmill"
+    },
+    {
+      "date": "2026-11-26",
+      "time": "12:00",
+      "operator": "Shelly",
+      "horse": "Freddie",
+      "owner": "Maria Lavery",
       "product": "Treadmill"
     },
     {
