@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-25",
+  "updated": "2026-10-26",
   "appointments": [
     {
       "date": "2026-10-26",
@@ -72,6 +72,14 @@
       "horse": "Misty",
       "owner": "Tania Nash",
       "product": "Treadmill"
+    },
+    {
+      "date": "2026-10-28",
+      "time": "10:30",
+      "operator": "Shelly",
+      "horse": "Jack",
+      "owner": "Maisie",
+      "product": ""
     },
     {
       "date": "2026-10-28",
@@ -259,6 +267,14 @@
     },
     {
       "date": "2026-11-05",
+      "time": "10:30",
+      "operator": "Shelly",
+      "horse": "Jack",
+      "owner": "Maisie",
+      "product": ""
+    },
+    {
+      "date": "2026-11-05",
       "time": "11:30",
       "operator": "Shelly",
       "horse": "König",
@@ -352,6 +368,14 @@
       "horse": "Sox",
       "owner": "Caroline Russ",
       "product": "Treradmill"
+    },
+    {
+      "date": "2026-11-11",
+      "time": "10:00",
+      "operator": "Shelly",
+      "horse": "Jack",
+      "owner": "Maisie",
+      "product": ""
     },
     {
       "date": "2026-11-11",
@@ -467,6 +491,14 @@
     },
     {
       "date": "2026-11-19",
+      "time": "09:30",
+      "operator": "Shelly",
+      "horse": "Jack",
+      "owner": "Maisie",
+      "product": ""
+    },
+    {
+      "date": "2026-11-19",
       "time": "10:00",
       "operator": "Shelly",
       "horse": "Grace",
@@ -520,6 +552,14 @@
       "horse": "Gordon",
       "owner": "Grace Millar",
       "product": "Treadmill"
+    },
+    {
+      "date": "2026-11-26",
+      "time": "09:30",
+      "operator": "Shelly",
+      "horse": "Jack",
+      "owner": "Maisie",
+      "product": ""
     },
     {
       "date": "2026-11-26",
@@ -587,6 +627,14 @@
     },
     {
       "date": "2026-12-03",
+      "time": "09:30",
+      "operator": "Shelly",
+      "horse": "Jack",
+      "owner": "Maisie",
+      "product": ""
+    },
+    {
+      "date": "2026-12-03",
       "time": "10:00",
       "operator": "Shelly",
       "horse": "Grace",
@@ -603,6 +651,14 @@
     },
     {
       "date": "2026-12-10",
+      "time": "09:30",
+      "operator": "Shelly",
+      "horse": "Jack",
+      "owner": "Maisie",
+      "product": ""
+    },
+    {
+      "date": "2026-12-10",
       "time": "10:00",
       "operator": "Shelly",
       "horse": "Grace",
@@ -616,6 +672,22 @@
       "horse": "Smartie",
       "owner": "Izzy Robertson",
       "product": "Treadmill"
+    },
+    {
+      "date": "2026-12-17",
+      "time": "09:30",
+      "operator": "Shelly",
+      "horse": "Jack",
+      "owner": "Maisie",
+      "product": ""
+    },
+    {
+      "date": "2026-12-24",
+      "time": "09:30",
+      "operator": "Shelly",
+      "horse": "Jack",
+      "owner": "Maisie",
+      "product": ""
     }
   ]
 }
