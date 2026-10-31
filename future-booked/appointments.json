@@ -1,22 +1,6 @@
 {
-  "updated": "2026-10-30",
+  "updated": "2026-10-31",
   "appointments": [
-    {
-      "date": "2026-10-30",
-      "time": "14:00",
-      "operator": "Michael",
-      "horse": "Squeaky",
-      "owner": "Cath Van Randwyck",
-      "product": "Treadmill"
-    },
-    {
-      "date": "2026-10-30",
-      "time": "15:00",
-      "operator": "Charlotte",
-      "horse": "Luna",
-      "owner": "Victoria Zawoda",
-      "product": "Sea Climate"
-    },
     {
       "date": "2026-10-31",
       "time": "11:30",
@@ -53,8 +37,16 @@
       "date": "2026-11-03",
       "time": "13:00",
       "operator": "Michael",
-      "horse": "Cheech",
+      "horse": "Max",
       "owner": "Kerry Dodimead",
+      "product": "Treadmill"
+    },
+    {
+      "date": "2026-11-03",
+      "time": "13:30",
+      "operator": "Michael",
+      "horse": "Mouse",
+      "owner": "L Turnbull",
       "product": "Treadmill"
     },
     {
