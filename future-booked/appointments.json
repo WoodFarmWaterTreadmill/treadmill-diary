@@ -19,18 +19,10 @@
     },
     {
       "date": "2026-11-11",
-      "time": "11:00",
+      "time": "11:30",
       "operator": "Shelly",
       "horse": "Skye",
       "owner": "Katie Silk",
-      "product": "Treadmill"
-    },
-    {
-      "date": "2026-11-11",
-      "time": "11:30",
-      "operator": "Shelly",
-      "horse": "Lune",
-      "owner": "Victoria Zawoda",
       "product": "Treadmill"
     },
     {
@@ -173,7 +165,7 @@
       "date": "2026-11-18",
       "time": "10:30",
       "operator": "Shelly",
-      "horse": "Lune",
+      "horse": "Luna",
       "owner": "Victoria Zawoda",
       "product": "Treadmill"
     },
@@ -277,7 +269,7 @@
       "date": "2026-11-25",
       "time": "12:00",
       "operator": "Shelly",
-      "horse": "Lune",
+      "horse": "Luna",
       "owner": "Victoria Zawoda",
       "product": "Treadmill"
     },
@@ -373,7 +365,7 @@
       "date": "2026-12-02",
       "time": "10:30",
       "operator": "Shelly",
-      "horse": "Lune",
+      "horse": "Luna",
       "owner": "Victoria Zawoda",
       "product": "Treadmill"
     },
@@ -435,6 +427,14 @@
     },
     {
       "date": "2026-12-09",
+      "time": "10:30",
+      "operator": "Shelly",
+      "horse": "Luna",
+      "owner": "Victoria Zawoda",
+      "product": "Treadmill"
+    },
+    {
+      "date": "2026-12-09",
       "time": "11:00",
       "operator": "Shelly",
       "horse": "Gordon",
@@ -447,14 +447,6 @@
       "operator": "Shelly",
       "horse": "Grace",
       "owner": "Jamie Eaton",
-      "product": "Treadmill"
-    },
-    {
-      "date": "2026-12-10",
-      "time": "10:30",
-      "operator": "Shelly",
-      "horse": "Lune",
-      "owner": "Victoria Zawoda",
       "product": "Treadmill"
     },
     {
