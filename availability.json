@@ -1,22 +1,12 @@
 [
   {
     "date": "2026-11-18",
+    "time": "10:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2026-11-18",
     "time": "13:00",
-    "with": "Shelly"
-  },
-  {
-    "date": "2026-11-19",
-    "time": "10:30",
-    "with": "Shelly"
-  },
-  {
-    "date": "2026-11-19",
-    "time": "11:00",
-    "with": "Shelly"
-  },
-  {
-    "date": "2026-11-19",
-    "time": "11:30",
     "with": "Shelly"
   },
   {
@@ -27,11 +17,6 @@
   {
     "date": "2026-11-19",
     "time": "14:00",
-    "with": "Shelly"
-  },
-  {
-    "date": "2026-11-25",
-    "time": "10:00",
     "with": "Shelly"
   },
   {
@@ -62,11 +47,6 @@
   {
     "date": "2026-11-26",
     "time": "14:00",
-    "with": "Shelly"
-  },
-  {
-    "date": "2026-12-02",
-    "time": "10:00",
     "with": "Shelly"
   },
   {
@@ -171,11 +151,6 @@
   },
   {
     "date": "2026-12-16",
-    "time": "10:00",
-    "with": "Shelly"
-  },
-  {
-    "date": "2026-12-16",
     "time": "10:30",
     "with": "Shelly"
   },
@@ -227,11 +202,6 @@
   {
     "date": "2026-12-17",
     "time": "12:00",
-    "with": "Shelly"
-  },
-  {
-    "date": "2026-12-17",
-    "time": "12:30",
     "with": "Shelly"
   },
   {
@@ -242,11 +212,6 @@
   {
     "date": "2026-12-17",
     "time": "13:30",
-    "with": "Shelly"
-  },
-  {
-    "date": "2026-12-23",
-    "time": "10:30",
     "with": "Shelly"
   },
   {
@@ -322,6 +287,996 @@
   {
     "date": "2026-12-24",
     "time": "14:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2026-12-30",
+    "time": "10:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2026-12-30",
+    "time": "11:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2026-12-30",
+    "time": "11:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2026-12-30",
+    "time": "12:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2026-12-30",
+    "time": "12:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2026-12-30",
+    "time": "13:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2026-12-31",
+    "time": "09:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2026-12-31",
+    "time": "10:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2026-12-31",
+    "time": "10:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2026-12-31",
+    "time": "11:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2026-12-31",
+    "time": "11:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2026-12-31",
+    "time": "12:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2026-12-31",
+    "time": "12:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2026-12-31",
+    "time": "13:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2026-12-31",
+    "time": "13:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2026-12-31",
+    "time": "14:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2026-12-31",
+    "time": "14:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-01-06",
+    "time": "10:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-01-06",
+    "time": "11:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-01-06",
+    "time": "11:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-01-06",
+    "time": "12:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-01-06",
+    "time": "12:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-01-06",
+    "time": "13:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-01-07",
+    "time": "09:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-01-07",
+    "time": "10:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-01-07",
+    "time": "10:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-01-07",
+    "time": "11:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-01-07",
+    "time": "11:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-01-07",
+    "time": "12:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-01-07",
+    "time": "12:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-01-07",
+    "time": "13:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-01-07",
+    "time": "13:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-01-07",
+    "time": "14:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-01-07",
+    "time": "14:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-01-13",
+    "time": "10:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-01-13",
+    "time": "11:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-01-13",
+    "time": "11:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-01-13",
+    "time": "12:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-01-13",
+    "time": "12:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-01-13",
+    "time": "13:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-01-14",
+    "time": "09:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-01-14",
+    "time": "10:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-01-14",
+    "time": "10:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-01-14",
+    "time": "11:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-01-14",
+    "time": "11:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-01-14",
+    "time": "12:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-01-14",
+    "time": "13:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-01-14",
+    "time": "13:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-01-14",
+    "time": "14:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-01-14",
+    "time": "14:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-01-21",
+    "time": "10:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-01-21",
+    "time": "11:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-01-21",
+    "time": "11:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-01-21",
+    "time": "12:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-01-21",
+    "time": "12:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-01-21",
+    "time": "13:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-01-22",
+    "time": "09:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-01-22",
+    "time": "10:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-01-22",
+    "time": "10:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-01-22",
+    "time": "11:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-01-22",
+    "time": "11:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-01-22",
+    "time": "12:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-01-22",
+    "time": "12:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-01-22",
+    "time": "13:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-01-22",
+    "time": "13:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-01-22",
+    "time": "14:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-01-22",
+    "time": "14:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-01-27",
+    "time": "10:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-01-27",
+    "time": "11:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-01-27",
+    "time": "11:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-01-27",
+    "time": "12:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-01-27",
+    "time": "12:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-01-27",
+    "time": "13:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-01-28",
+    "time": "09:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-01-28",
+    "time": "10:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-01-28",
+    "time": "10:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-01-28",
+    "time": "11:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-01-28",
+    "time": "11:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-01-28",
+    "time": "12:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-01-28",
+    "time": "13:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-01-28",
+    "time": "13:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-01-28",
+    "time": "14:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-01-28",
+    "time": "14:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-02-10",
+    "time": "10:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-02-10",
+    "time": "11:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-02-10",
+    "time": "11:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-02-10",
+    "time": "12:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-02-10",
+    "time": "12:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-02-10",
+    "time": "13:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-02-11",
+    "time": "09:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-02-11",
+    "time": "10:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-02-11",
+    "time": "10:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-02-11",
+    "time": "11:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-02-11",
+    "time": "11:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-02-11",
+    "time": "12:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-02-11",
+    "time": "13:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-02-11",
+    "time": "13:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-02-11",
+    "time": "14:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-02-11",
+    "time": "14:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-02-17",
+    "time": "10:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-02-17",
+    "time": "11:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-02-17",
+    "time": "11:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-02-17",
+    "time": "12:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-02-17",
+    "time": "12:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-02-17",
+    "time": "13:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-02-18",
+    "time": "09:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-02-18",
+    "time": "10:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-02-18",
+    "time": "10:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-02-18",
+    "time": "11:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-02-18",
+    "time": "11:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-02-18",
+    "time": "12:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-02-18",
+    "time": "12:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-02-18",
+    "time": "13:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-02-18",
+    "time": "13:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-02-18",
+    "time": "14:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-02-18",
+    "time": "14:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-02-24",
+    "time": "10:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-02-24",
+    "time": "11:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-02-24",
+    "time": "11:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-02-24",
+    "time": "12:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-02-24",
+    "time": "12:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-02-24",
+    "time": "13:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-02-25",
+    "time": "09:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-02-25",
+    "time": "10:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-02-25",
+    "time": "10:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-02-25",
+    "time": "11:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-02-25",
+    "time": "11:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-02-25",
+    "time": "12:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-02-25",
+    "time": "13:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-02-25",
+    "time": "13:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-02-25",
+    "time": "14:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-02-25",
+    "time": "14:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-03-03",
+    "time": "10:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-03-03",
+    "time": "11:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-03-03",
+    "time": "11:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-03-03",
+    "time": "12:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-03-03",
+    "time": "12:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-03-03",
+    "time": "13:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-03-04",
+    "time": "09:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-03-04",
+    "time": "10:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-03-04",
+    "time": "10:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-03-04",
+    "time": "11:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-03-04",
+    "time": "11:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-03-04",
+    "time": "12:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-03-04",
+    "time": "12:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-03-04",
+    "time": "13:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-03-04",
+    "time": "13:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-03-04",
+    "time": "14:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-03-04",
+    "time": "14:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-03-10",
+    "time": "10:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-03-10",
+    "time": "11:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-03-10",
+    "time": "11:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-03-10",
+    "time": "12:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-03-10",
+    "time": "12:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-03-10",
+    "time": "13:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-03-11",
+    "time": "09:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-03-11",
+    "time": "10:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-03-11",
+    "time": "10:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-03-11",
+    "time": "11:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-03-11",
+    "time": "11:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-03-11",
+    "time": "12:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-03-11",
+    "time": "13:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-03-11",
+    "time": "13:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-03-11",
+    "time": "14:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-03-11",
+    "time": "14:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-03-17",
+    "time": "10:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-03-17",
+    "time": "11:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-03-17",
+    "time": "11:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-03-17",
+    "time": "12:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-03-17",
+    "time": "12:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-03-17",
+    "time": "13:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-03-18",
+    "time": "09:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-03-18",
+    "time": "10:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-03-18",
+    "time": "10:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-03-18",
+    "time": "11:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-03-18",
+    "time": "11:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-03-18",
+    "time": "12:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-03-18",
+    "time": "12:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-03-18",
+    "time": "13:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-03-18",
+    "time": "13:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-03-18",
+    "time": "14:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-03-18",
+    "time": "14:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-03-24",
+    "time": "10:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-03-24",
+    "time": "11:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-03-24",
+    "time": "11:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-03-24",
+    "time": "12:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-03-24",
+    "time": "12:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-03-24",
+    "time": "13:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-03-25",
+    "time": "09:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-03-25",
+    "time": "10:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-03-25",
+    "time": "10:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-03-25",
+    "time": "11:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-03-25",
+    "time": "11:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-03-25",
+    "time": "12:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-03-25",
+    "time": "13:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-03-25",
+    "time": "13:30",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-03-25",
+    "time": "14:00",
+    "with": "Shelly"
+  },
+  {
+    "date": "2027-03-25",
+    "time": "14:30",
     "with": "Shelly"
   }
 ]
