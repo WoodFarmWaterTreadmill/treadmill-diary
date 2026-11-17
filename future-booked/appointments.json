@@ -3,6 +3,22 @@
   "appointments": [
     {
       "date": "2026-11-17",
+      "time": "11:00",
+      "operator": "Michael",
+      "horse": "HORSE",
+      "owner": "Teri Smith",
+      "product": "Treadmill"
+    },
+    {
+      "date": "2026-11-17",
+      "time": "11:30",
+      "operator": "Michael",
+      "horse": "HORSE",
+      "owner": "Royale Equine",
+      "product": "Treadmill"
+    },
+    {
+      "date": "2026-11-17",
       "time": "12:00",
       "operator": "Michael",
       "horse": "König",
