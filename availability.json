@@ -1,15 +1,5 @@
 [
   {
-    "date": "2026-11-19",
-    "time": "12:00",
-    "with": "Shelly"
-  },
-  {
-    "date": "2026-11-25",
-    "time": "10:30",
-    "with": "Shelly"
-  },
-  {
     "date": "2026-11-25",
     "time": "11:30",
     "with": "Shelly"
@@ -22,16 +12,6 @@
   {
     "date": "2026-11-25",
     "time": "13:00",
-    "with": "Shelly"
-  },
-  {
-    "date": "2026-11-26",
-    "time": "10:30",
-    "with": "Shelly"
-  },
-  {
-    "date": "2026-11-26",
-    "time": "14:00",
     "with": "Shelly"
   },
   {
@@ -65,16 +45,6 @@
     "with": "Shelly"
   },
   {
-    "date": "2026-12-03",
-    "time": "12:30",
-    "with": "Shelly"
-  },
-  {
-    "date": "2026-12-03",
-    "time": "13:00",
-    "with": "Shelly"
-  },
-  {
     "date": "2026-12-09",
     "time": "11:30",
     "with": "Shelly"
@@ -82,16 +52,6 @@
   {
     "date": "2026-12-09",
     "time": "12:00",
-    "with": "Shelly"
-  },
-  {
-    "date": "2026-12-09",
-    "time": "12:30",
-    "with": "Shelly"
-  },
-  {
-    "date": "2026-12-09",
-    "time": "13:00",
     "with": "Shelly"
   },
   {
@@ -117,11 +77,6 @@
   {
     "date": "2026-12-10",
     "time": "13:00",
-    "with": "Shelly"
-  },
-  {
-    "date": "2026-12-10",
-    "time": "13:30",
     "with": "Shelly"
   },
   {
@@ -180,16 +135,6 @@
     "with": "Shelly"
   },
   {
-    "date": "2026-12-17",
-    "time": "13:00",
-    "with": "Shelly"
-  },
-  {
-    "date": "2026-12-17",
-    "time": "13:30",
-    "with": "Shelly"
-  },
-  {
     "date": "2026-12-23",
     "time": "11:00",
     "with": "Shelly"
@@ -212,56 +157,6 @@
   {
     "date": "2026-12-23",
     "time": "13:00",
-    "with": "Shelly"
-  },
-  {
-    "date": "2026-12-24",
-    "time": "09:30",
-    "with": "Shelly"
-  },
-  {
-    "date": "2026-12-24",
-    "time": "10:00",
-    "with": "Shelly"
-  },
-  {
-    "date": "2026-12-24",
-    "time": "10:30",
-    "with": "Shelly"
-  },
-  {
-    "date": "2026-12-24",
-    "time": "11:00",
-    "with": "Shelly"
-  },
-  {
-    "date": "2026-12-24",
-    "time": "11:30",
-    "with": "Shelly"
-  },
-  {
-    "date": "2026-12-24",
-    "time": "12:00",
-    "with": "Shelly"
-  },
-  {
-    "date": "2026-12-24",
-    "time": "12:30",
-    "with": "Shelly"
-  },
-  {
-    "date": "2026-12-24",
-    "time": "13:00",
-    "with": "Shelly"
-  },
-  {
-    "date": "2026-12-24",
-    "time": "13:30",
-    "with": "Shelly"
-  },
-  {
-    "date": "2026-12-24",
-    "time": "14:00",
     "with": "Shelly"
   },
   {
@@ -397,16 +292,6 @@
   {
     "date": "2027-01-07",
     "time": "12:00",
-    "with": "Shelly"
-  },
-  {
-    "date": "2027-01-07",
-    "time": "12:30",
-    "with": "Shelly"
-  },
-  {
-    "date": "2027-01-07",
-    "time": "13:00",
     "with": "Shelly"
   },
   {
